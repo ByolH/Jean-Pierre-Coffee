@@ -449,7 +449,7 @@ body::-webkit-scrollbar-track {
 }
 
 .c4_bottom-text {
-    padding: 380px 0 0;
+    padding: 360px 0 0 220px;
 }
 
 .c4_bottom-text p {
