@@ -1,0 +1,575 @@
+/* 강원모두교육체 */
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 프리텐다드체 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 개미똥꾸멍체 */
+@font-face {
+    font-family: 'SangSangAnt';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/SangSangAnt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    font-size: 18px;
+    line-height: 35px;
+    color: #212121;
+    min-width: 1636px;
+}
+
+body::-webkit-scrollbar {
+    /*스크롤바 전체*/
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    /*스크롤바 막대*/
+    background-color: #443731;
+    border-radius: 5px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-track {
+    /*스크롤바 막대 외부*/
+    background-color: rgba(68, 55, 49, 0.5);
+    border-radius: 5px;
+}
+
+/* top button */
+.topbutton{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+    z-index: 99;
+  }
+
+/* top */
+.header_scroll {
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.header2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    background-color: rgba(249, 246, 240, 0.9);
+    z-index: 4;
+}
+
+.header_scroll div {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* 자바스크립트로 추가될 클래스 */
+.nav-up {
+    /* 헤더 높이만큼 주기 */
+    top: -92px;
+}
+
+.nav {
+    width: 1000px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li {
+    width: 20%;
+    text-align: center;
+}
+
+.nav a {
+    display: block;
+    font-family: 'GangwonEdu_OTFBoldA';
+    color: #fff;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.header2 .nav a {
+    color: #443731;
+}
+
+.nav a img {
+    display: block;
+    margin: auto;
+}
+
+.nav a:hover img {
+    opacity: 0.5;
+}
+
+.icon {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 5;
+    position: absolute;
+    right: 0;
+}
+
+.icon a:hover {
+    opacity: 0.5;
+}
+
+.icon li {
+    margin-left: 20px;
+}
+
+.icon img {
+    display: block;
+    width: 20px;
+}
+
+/* banner */
+.banner {
+    background: url(./images/sub4-magazine/sub4_banner.png) no-repeat center top;
+    background-size: cover;
+    position: relative;
+    z-index: 5;
+}
+
+.banner_inner {
+    width: 85%;
+    min-width: 1320px;
+    height: 706px;
+    margin: auto;
+    position: relative;
+}
+
+.banner_text {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    color: #fff;
+    text-align: right;
+}
+
+.banner_text h3 {
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 30px;
+    padding-bottom: 30px;
+    letter-spacing: 4px;
+}
+
+.banner_text h2 {
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: 4px;
+}
+
+.typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+/* c1 origin */
+.c1 {
+    overflow: hidden;
+}
+
+.c1_inner {
+    min-width: 1320px;
+    width: 85%;
+    height: 870px;
+    margin: 200px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c1_inner>div:nth-child(1) {
+    width: 100%;
+}
+
+.c1_text {
+    padding: 110px 0 0 140px;
+}
+
+.c1 h4 {
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 40px;
+    line-height: 50px;
+    color: #443731;
+}
+
+.c1 p {
+    line-height: 28px;
+    padding-top: 40px;
+}
+
+/* c2 change */
+.c2 {
+    background: url(./images/sub4-magazine/c2_bg.png) no-repeat center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.c2_inner {
+    min-width: 1320px;
+    width: 85%;
+    height: 880px;
+    margin: auto;
+    position: relative;
+}
+
+.c2_inner h6 {
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: 130px;
+}
+
+.c2_inner p {
+    position: absolute;
+    left: 0;
+    bottom: 90px;
+    line-height: 40px;
+}
+
+/* c3 reason */
+.c3 {
+    width: 1320px;
+    margin: 300px auto;
+}
+
+.c3_inner {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c3_img {
+    width: 538px;
+    height: 800px;
+    margin-left: -55px;
+    background: url(./images/sub4-magazine/c3_p1.png) no-repeat;
+    position: sticky;
+    top: 50px;
+}
+
+.c3_img.img1 {
+    background: url(./images/sub4-magazine/c3_p2.png) no-repeat;
+}
+
+.c3_img.img2 {
+    background: url(./images/sub4-magazine/c3_p3.png) no-repeat;
+}
+
+
+.c3_text>div {
+    margin-bottom: 250px;
+}
+
+.c3_text h5 {
+    font-family: 'GangwonEdu_OTFBoldA';
+    color: #646f61;
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding: 18px 33px 10px;
+}
+
+.c3_text p {
+    margin-top: 50px;
+}
+
+.c3_text-1 {
+    padding-top: 250px;
+}
+
+.c3_text-1>div {
+    background: url(./images/sub4-magazine/c3_t1_bg.png) no-repeat left center;
+}
+
+.c3_text-2>div {
+    background: url(./images/sub4-magazine/c3_t2_bg.png) no-repeat left center;
+}
+
+.c3_text-3>div {
+    background: url(./images/sub4-magazine/c3_t3_bg.png) no-repeat left center;
+}
+
+/* c4 future */
+.c4 {
+    overflow: hidden;
+}
+
+.c4_inner {
+    min-width: 1320px;
+    width: 90%;
+    margin: auto;
+}
+
+.c4_inner>div {
+    margin-bottom: 200px;
+}
+
+.c4_top {
+    position: relative;
+    height: 870px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c4_top img:nth-child(1) {
+    margin: 110px 0 0 -95px;
+}
+
+.c4_top img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 630px;
+}
+
+.c4_top img:nth-child(3) {
+    position: absolute;
+    top: 110px;
+    right: 210px;
+}
+
+.c4_top img:nth-child(4) {
+    position: absolute;
+    top: 225px;
+    right: -40px;
+}
+
+.c4_top-text {
+    margin: 320px 200px 0 0;
+}
+
+
+.c4_top-text p {
+    margin-top: 50px;
+}
+
+.c4_bottom {
+    position: relative;
+    height: 765px;
+}
+
+.c4_bottom img:nth-child(1) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.c4_bottom img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 135px;
+}
+
+.c4_bottom img:nth-child(3) {
+    position: absolute;
+    top: 125px;
+    left: 270px;
+}
+
+.c4_bottom img:nth-child(4) {
+    position: absolute;
+    top: 235px;
+    left: 0;
+}
+
+.c4_bottom-text {
+    padding: 380px 0 0;
+}
+
+.c4_bottom-text p {
+    margin-top: 50px;
+}
+
+/* c5 letter */
+.c5 {
+    background: url(./images/sub4-magazine/c5_bg.png) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.c5_inner {
+    width: 1320px;
+    margin: auto;
+    height: 896px;
+    position: relative;
+}
+
+
+.c5_inner img {
+    padding: 100px 0 0 100px;
+}
+
+.c5_text {
+    font-family: 'SangSangAnt';
+    font-size: 20px;
+    line-height: 22px;
+    position: absolute;
+    top: 150px;
+    left: 230px;
+    transform: rotate(4deg);
+}
+
+.c5_text p {
+    margin-top: 20px;
+}
+
+
+
+/* footer */
+footer {
+    background-color: #f9f6f0;
+    padding: 50px 0;
+}
+
+.f_top {
+    width: 1320px;
+    margin: auto;
+}
+
+.f_top ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #acacac;
+}
+
+.f_top ul a {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 40px;
+}
+
+.f_top ul a:hover {
+    text-decoration: underline;
+}
+
+.f_bottom {
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_logo {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.f_logo a:nth-child(1) {
+    width: 100%;
+}
+
+.f_logo a:nth-child(2),
+.f_logo a:nth-child(3) {
+    margin: 30px 20px;
+    opacity: 0.5;
+}
+
+.f_logo a:nth-child(2):hover,
+.f_logo a:nth-child(3):hover {
+    opacity: 1;
+}
+
+
+.f_info {
+    font-size: 13px;
+    text-align: center;
+}
+
+.f_cs {
+    text-align: center;
+    font-size: 17px;
+}
+
+.f_cs span {
+    font-size: 40px;
+    line-height: 60px;
+}

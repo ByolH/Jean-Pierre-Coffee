@@ -1,0 +1,531 @@
+/* 강원모두교육체 */
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 프리텐다드체 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 개미똥꾸멍체 */
+@font-face {
+    font-family: 'SangSangAnt';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/SangSangAnt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    line-height: 35px;
+    color: #212121;
+    min-width: 1636px;
+}
+
+body::-webkit-scrollbar {
+    /*스크롤바 전체*/
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    /*스크롤바 막대*/
+    background-color: #443731;
+    border-radius: 5px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-track {
+    /*스크롤바 막대 외부*/
+    background-color: rgba(68, 55, 49, 0.5);
+    border-radius: 5px;
+}
+
+/* top */
+
+.header_scroll {
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.header2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    background-color: rgba(249, 246, 240, 0.9);
+    z-index: 4;
+}
+
+.header_scroll div {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* 자바스크립트로 추가될 클래스 */
+.nav-up {
+    /* 헤더 높이만큼 주기 */
+    top: -92px;
+}
+
+.nav {
+    width: 1000px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li {
+    width: 20%;
+    text-align: center;
+}
+
+.nav a {
+    display: block;
+    font-family: 'GangwonEdu_OTFBoldA';
+    color: #fff;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.header2 .nav a {
+    color: #443731;
+}
+
+.nav a img {
+    display: block;
+    margin: auto;
+}
+
+.nav a:hover img {
+    opacity: 0.5;
+}
+
+.icon {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 5;
+    position: absolute;
+    right: 0;
+}
+
+.icon a:hover {
+    opacity: 0.5;
+}
+
+.icon li {
+    margin-left: 20px;
+}
+
+.icon img {
+    display: block;
+    width: 20px;
+}
+
+/* banner */
+.banner {
+    background: url(./images/sub3-foryou/sub3_banner.png) no-repeat center top;
+    background-size: cover;
+    height: 706px;
+    position: relative;
+    z-index: 5;
+}
+
+.banner_inner {
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+
+/* #may */
+/* c1 intro */
+.c1 {
+
+    background: url(./images/sub3-foryou/c1_bg.png) no-repeat center top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.c1_inner {
+    width: 90%;
+    height: 1147px;
+    margin: auto;
+    position: relative;
+}
+
+.c1_inner h1 {
+    display: block;
+    color: #fff;
+    font-family: 'SangSangAnt';
+    font-size: 110px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    /* margin-top: 80px; */
+    padding: 80px 0 0 120px;
+}
+
+.c1_inner h1 span {
+    display: block;
+    padding: 50px 0 0 50px;
+    font-size: 80px;
+}
+
+.c1_inner img:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.c1_inner img:nth-child(3) {
+    position: absolute;
+    left: 60px;
+    bottom: 0;
+}
+
+.c1_text-1,
+.c1_text-2 {
+    width: 500px;
+    text-align: center;
+}
+
+.c1_text-1 {
+    margin: 80px 0 0 200px;
+}
+
+.c1_inner .c1_text-2 {
+    margin: 290px 0 0 910px;
+}
+
+.c1_inner p {
+    margin-top: 30px;
+}
+
+
+/* c2 point */
+.c2 {
+    background: url(./images/sub3-foryou/c2_bg.png) no-repeat center top;
+    background-size: cover;
+    height: 727px;
+}
+
+.c2_inner {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.c2_inner>div {
+    display: inline-block;
+    background-color: rgba(249, 246, 240, 0.5);
+    box-shadow: 10px 10px 1px rgba(55, 55, 55, 0.8);
+    padding: 45px 50px;
+}
+
+.c2_inner h3 {
+    font-size: 25px;
+    line-height: 31px;
+}
+
+.c2_inner p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.c2_inner>div:nth-child(1) {
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+.c2_inner>div:nth-child(2) {
+    position: absolute;
+    top: 250px;
+    left: 520px;
+}
+
+.c2_inner>div:nth-child(3) {
+    position: absolute;
+    top: 460px;
+    left: 115px;
+}
+
+
+/* c3 taste */
+.c3 {
+    background-color: #e5caac;
+    height: 544px;
+}
+
+.c3_inner {
+    width: 1320px;
+    margin: auto;
+    padding-top: 100px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c3_inner p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* #find */
+/* c4 */
+.c4 {
+    background: url(./images/sub3-foryou/c4_bg.png) no-repeat center top;
+    background-size: cover;
+    overflow: hidden;
+    height: 636px;
+    position: relative;
+}
+
+.c4_inner {
+    width: 1320px;
+    height: 1908px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 1s;
+    top: 0;
+}
+
+.c4_inner>div {
+    text-align: center;
+    padding: 80px 0;
+    height: 636px;
+    box-sizing: border-box;
+}
+
+.c4_inner>div>div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.c4_inner h1 {
+    font-size: 37px;
+    width: 100%;
+}
+
+.c4_inner h6 {
+    font-size: 16px;
+    width: 100%;
+    margin: 20px 0 60px;
+}
+
+.c4_inner>div>div>div {
+    margin: 0 20px;
+    position: relative;
+}
+
+.c4_inner p {
+    width: 180px;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+
+
+/* popup */
+.popup {
+    width: 1920px;
+    height: 636px;
+    background-color: #fff;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    /*팝업없애기 - 나타나게 만드는 것은 제이쿼리에서 해줌*/
+}
+
+.popup_inner {
+    width: 960px;
+    margin: 80px auto 40px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.popup h1 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.popup>p:nth-child(2) {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.popup>p:nth-child(2):hover{
+    text-decoration: underline;
+}
+
+
+.popup_inner>div:nth-child(2) {
+    width: 300px;
+    height: 300px;
+    background: url(./images/sub3-foryou/c7_bg.png) no-repeat center bottom;
+}
+
+.popup_inner>div:nth-child(2) img {
+    transition: all 1s;
+}
+
+
+.popup_inner>div:nth-child(2):hover img {
+    transform: scale(1.2, 1.2);
+}
+
+.popup h2 {
+    margin-bottom: 50px;
+}
+
+.popup_inner div {
+    text-align: center;
+}
+
+
+/* footer */
+footer {
+    background-color: #f9f6f0;
+    padding: 50px 0;
+}
+
+.f_top {
+    width: 1320px;
+    margin: auto;
+}
+
+.f_top ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #acacac;
+}
+
+.f_top ul a {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 40px;
+}
+
+.f_top ul a:hover {
+    text-decoration: underline;
+}
+
+.f_bottom {
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_logo {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.f_logo a:nth-child(1) {
+    width: 100%;
+}
+
+.f_logo a:nth-child(2),
+.f_logo a:nth-child(3) {
+    margin: 30px 20px;
+    opacity: 0.5;
+}
+
+.f_logo a:nth-child(2):hover,
+.f_logo a:nth-child(3):hover {
+    opacity: 1;
+}
+
+
+.f_info {
+    font-size: 13px;
+    text-align: center;
+}
+
+.f_cs {
+    text-align: center;
+    font-size: 17px;
+}
+
+.f_cs span {
+    font-size: 40px;
+    line-height: 60px;
+}

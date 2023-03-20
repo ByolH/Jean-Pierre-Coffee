@@ -1,0 +1,375 @@
+/* 강원모두교육체 */
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 프리텐다드체 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+    line-height: 28px;
+    color: #212121;
+    min-width: 1636px;
+}
+
+body::-webkit-scrollbar {
+    /*스크롤바 전체*/
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    /*스크롤바 막대*/
+    background-color: #443731;
+    border-radius: 5px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-track {
+    /*스크롤바 막대 외부*/
+    background-color: rgba(68, 55, 49, 0.5);
+    border-radius: 5px;
+}
+
+/* top button */
+.topbutton{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+    z-index: 99;
+  }
+
+/* top */
+
+.header_scroll {
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.header2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    background-color: rgba(249, 246, 240, 0.9);
+    z-index: 4;
+}
+
+.header_scroll div {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* 자바스크립트로 추가될 클래스 */
+.nav-up {
+    /* 헤더 높이만큼 주기 */
+    top: -92px;
+}
+
+.nav {
+    width: 1000px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li {
+    width: 20%;
+    text-align: center;
+}
+
+.nav a {
+    display: block;
+    font-family: 'GangwonEdu_OTFBoldA';
+    color: #fff;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.header2 .nav a {
+    color: #443731;
+}
+
+.nav a img {
+    display: block;
+    margin: auto;
+}
+
+.nav a:hover img {
+    opacity: 0.5;
+}
+
+.icon {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 5;
+    position: absolute;
+    right: 0;
+}
+
+.icon a:hover {
+    opacity: 0.5;
+}
+
+.icon li {
+    margin-left: 20px;
+}
+
+.icon img {
+    display: block;
+    width: 20px;
+}
+
+/* banner */
+.banner {
+    background: url(./images/sub2-shop/sub2_banner.png) no-repeat center top;
+    background-size: cover;
+    height: 706px;
+    position: relative;
+    z-index: 5;
+}
+
+.banner_inner {
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+
+.banner img {
+    position: absolute;
+    top: 486px;
+    right: 0;
+}
+
+/* tap */
+aside ul{
+    width: 500px;
+    margin: 100px auto 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+aside a{
+    padding: 10px 20px;
+    }
+
+
+aside a:hover{
+    background-color: #95a092;
+    color: #fff;
+}
+
+
+/* box */
+.box {
+    width: 85%;
+    margin: 50px auto;
+    padding-top: 100px;
+}
+
+h3 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.box_inner {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_inner>div {
+    width: 31%;
+    position: relative;
+}
+
+.box_inner p,
+.box_inner h6,
+.box_inner h5{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.box_inner p {
+    bottom: 64px;
+    z-index: 3;
+}
+
+.box_inner h6 {
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 20px;
+    top: 34px;
+    color: #fff;
+}
+
+.box_inner h5 {
+    color: #fff;
+    background-color: #545454;
+    font-size: 18px;
+    bottom: 0px;
+    padding: 10px 0;
+}
+
+.box_inner span {
+    font-size: 16px;
+    font-family: 'Pretendard-Regular';
+}
+
+.box_inner img{
+    width: 100%;
+    display: block;
+}
+
+/* c1 hover */
+.hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.box_inner>div a:hover .hover {
+    opacity: 1;
+}
+
+.box_inner>div a:hover p:nth-child(2){
+    color: #fff;
+}
+
+h5:hover {
+    background-color: #333333;
+}
+
+/* footer */
+footer {
+    background-color: #f9f6f0;
+    padding: 50px 0;
+}
+
+.f_top {
+    width: 1320px;
+    margin: auto;
+}
+
+.f_top ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #acacac;
+}
+
+.f_top ul a {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 40px;
+}
+
+.f_top ul a:hover {
+    text-decoration: underline;
+}
+
+.f_bottom {
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_logo {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.f_logo a:nth-child(1) {
+    width: 100%;
+}
+
+.f_logo a:nth-child(2),
+.f_logo a:nth-child(3) {
+    margin: 30px 20px;
+    opacity: 0.5;
+}
+
+.f_logo a:nth-child(2):hover,
+.f_logo a:nth-child(3):hover {
+    opacity: 1;
+}
+
+
+.f_info {
+    font-size: 13px;
+    text-align: center;
+}
+
+.f_cs {
+    text-align: center;
+    font-size: 17px;
+}
+
+.f_cs span {
+    font-size: 40px;
+    line-height: 60px;
+}

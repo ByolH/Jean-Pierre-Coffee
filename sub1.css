@@ -1,0 +1,490 @@
+/* 강원모두교육체 */
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 프리텐다드체 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #443731;
+}
+
+body {
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 20px;
+    line-height: 35px;
+    color: #443731;
+    min-width: 1320px;
+}
+
+body::-webkit-scrollbar {
+    /*스크롤바 전체*/
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    /*스크롤바 막대*/
+    background-color: #443731;
+    border-radius: 5px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-track {
+    /*스크롤바 막대 외부*/
+    background-color: rgba(68, 55, 49, 0.5);
+    border-radius: 5px;
+}
+
+/* top */
+.topbutton{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+    z-index: 99;
+  }
+
+.header_scroll {
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+.header2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    background-color: rgba(249, 246, 240, 0.9);
+    z-index: 4;
+}
+
+.header_scroll div {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* 자바스크립트로 추가될 클래스 */
+.nav-up {
+    /* 헤더 높이만큼 주기 */
+    top: -92px;
+}
+
+.nav {
+    width: 1000px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li {
+    width: 20%;
+    text-align: center;
+}
+
+.nav a {
+    display: block;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.header2 .nav a {
+    color: #443731;
+}
+
+.nav a img {
+    display: block;
+    margin: auto;
+}
+
+.nav a:hover img {
+    opacity: 0.5;
+}
+
+.icon {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 5;
+    position: absolute;
+    right: 0;
+}
+
+.icon a:hover {
+    opacity: 0.5;
+}
+
+.icon li {
+    margin-left: 20px;
+}
+
+.icon img {
+    display: block;
+    width: 20px;
+}
+
+
+/* c1 */
+.c1 {
+    height: 940px;
+    background: url(./images/sub1-brandstory/c1_JP.png) no-repeat center 260px fixed #d3bd92;
+    position: relative;
+    z-index: 5;
+}
+
+.c1_inner {
+    width: 80%;
+    max-width: 1320px;
+    margin: auto;
+    position: relative;
+}
+
+.c1 img {
+    margin: 430px 0 0 80px;
+}
+
+.c1 p {
+    position: absolute;
+    bottom: -355px;
+    right: -95px;
+}
+
+/* c2 */
+.c2 {
+    height: 940px;
+    background: url(./images/sub1-brandstory/c2_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.c2_inner {
+    width: 1320px;
+    margin: auto;
+}
+
+.c2 img {
+    margin: 300px 0 0 700px;
+}
+
+.c2 p {
+    color: #fff;
+    margin: 35px 0 0 700px;
+}
+
+
+/* c3 */
+.c3 {
+    height: 940px;
+    background-color: #f0e9db;
+    position: relative;
+}
+
+
+.c3_inner {
+    width: 1320px;
+    margin: auto;
+}
+
+.c3 img:nth-child(1) {
+    margin: 300px 0 0 0;
+}
+
+.c3 img:nth-child(2) {
+    position: absolute;
+    top: 10%;
+    right: 7%;
+}
+
+.c3 p {
+    text-align: center;
+    margin: 35px 0 0 0;
+    width: 460px;
+}
+
+
+/* c4 */
+.c4 {
+    height: 940px;
+    background: url(./images/sub1-brandstory/c4_bg.png) no-repeat;
+    background-size: cover;
+}
+
+.c4_inner {
+    width: 1320px;
+    margin: auto;
+}
+
+.c4 img {
+    margin: 300px 0 0 800px;
+}
+
+.c4 p {
+    color: #d8cfc0;
+    margin: 35px 0 0 800px;
+}
+
+/* c5 */
+.c5 {
+    height: 940px;
+    background: #e1d3b7;
+    position: relative;
+    overflow: hidden;
+}
+
+.c5_inner {
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.c5_inner>div {
+    width: calc(1320px - 360px);
+    position: relative;
+}
+
+.c5_inner>img {
+    margin: 430px 0 0 0;
+}
+
+.gallery {
+    position: absolute;
+    top: 40%;
+    left: 100px;
+}
+
+.gallery_inner {
+    padding: 20px 0;
+}
+
+.gallery .swiper-slide {
+    box-shadow: 20px 0 15px rgba(68, 55, 49, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-slide .black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 5;
+    opacity: 0;
+}
+
+.swiper-slide:hover .black {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.black p {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* c6 */
+
+.c6 {
+    height: 940px;
+    background: url(./images/sub1-brandstory/c6_bg.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.c6_inner {
+    width: 1320px;
+    margin: auto;
+
+}
+
+.c6_text {
+    padding: 280px 0 0 50px;
+}
+
+.c6_text a {
+    color: #fff;
+    text-decoration: underline #fff;
+}
+
+.c6 p {
+    color: #fff;
+    margin-top: 35px;
+    position: relative;
+}
+
+.c6_text span {
+    display: inline-block;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 21px;
+    transform-origin: left;
+    transition: all 1s;
+}
+
+.c6_text a:hover {
+    text-decoration: none;
+}
+
+.a_row {
+    width: 55px;
+    left: 12%;
+    transform: scaleX(0);
+}
+
+.c6_text .a_col1,
+.c6_text .a_col2 {
+    width: 17px;
+    left: calc(12% + 55px);
+    opacity: 0;
+}
+
+.c6_text .a_col1 {
+    transform: rotate(-140deg);
+}
+
+.c6_text .a_col2 {
+    transform: rotate(140deg);
+}
+
+.c6_text p a:hover .a_row {
+    transform: scaleX(1);
+}
+
+.c6_text p a:hover .a_col1,
+.c6_text p a:hover .a_col2 {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+
+/* footer */
+footer {
+    background-color: #f9f6f0;
+    font-family: 'Pretendard-Regular';
+    padding: 50px 0;
+}
+
+.f_top {
+    width: 1320px;
+    margin: auto;
+}
+
+.f_top ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #acacac;
+}
+
+.f_top ul a {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 40px;
+}
+
+.f_top ul a:hover {
+    text-decoration: underline;
+}
+
+.f_bottom {
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f_logo {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.f_logo a:nth-child(1) {
+    width: 100%;
+}
+
+.f_logo a:nth-child(2),
+.f_logo a:nth-child(3) {
+    margin: 30px 20px;
+    opacity: 0.5;
+}
+
+.f_logo a:nth-child(2):hover,
+.f_logo a:nth-child(3):hover {
+    opacity: 1;
+}
+
+
+.f_info {
+    font-size: 13px;
+    text-align: center;
+}
+
+.f_cs {
+    text-align: center;
+    font-size: 17px;
+}
+
+.f_cs span {
+    font-size: 40px;
+    line-height: 60px;
+}
