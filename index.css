@@ -56,13 +56,13 @@ body::-webkit-scrollbar-track {
 }
 
 /* top button */
-.topbutton{
-    position:fixed; 
-    bottom:50px; 
-    right:50px; 
-    display:none;
+.topbutton {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
     z-index: 99;
-  }
+}
 
 
 /* top */
@@ -166,32 +166,17 @@ body::-webkit-scrollbar-track {
 
 /* banner */
 .banner {
-    background: url(./images/main/banner.png) no-repeat center top;
+    background: url(./images/main/jeanpierremain.mp4);
     background-size: cover;
     height: 940px;
     position: relative;
     z-index: 5;
 }
 
-.banner_inner{
-    width: 1320px;
-    margin: auto;
+.banner video {
+    width: 100%;
 }
 
-.banner img {
-    margin: 340px 0 0;
-    animation: blur 1.5s ease-in;
-}
-
-@keyframes blur {
-    0% {
-        filter: blur(15px);
-    }
-
-    100% {
-        filter: blur(0px);
-    }
-}
 
 /* c1 best */
 .c1 {
@@ -227,7 +212,7 @@ body::-webkit-scrollbar-track {
     transition: all 0.5s;
 }
 
-.c1 a:hover img{
+.c1 a:hover img {
     transform: translateY(-10px);
     filter: none;
 }
@@ -239,7 +224,7 @@ body::-webkit-scrollbar-track {
     padding: 300px 0;
     color: #443731;
     overflow: hidden;
-    background: linear-gradient( to bottom, #fff 30%, #d3bd92 30%, #d3bd92 70%, #fff 70% );
+    background: linear-gradient(to bottom, #fff 30%, #d3bd92 30%, #d3bd92 70%, #fff 70%);
 }
 
 .c2_inner {
@@ -272,8 +257,8 @@ body::-webkit-scrollbar-track {
     }
 }
 
-.c2 img:nth-child(1):hover{
-    transform: scale(1.2,1.2);
+.c2 img:nth-child(1):hover {
+    transform: scale(1.2, 1.2);
 }
 
 .c2 img:nth-child(3) {
@@ -326,17 +311,17 @@ body::-webkit-scrollbar-track {
     font-weight: 100;
 }
 
-.c3_inner a img{
+.c3_inner a img {
     transition: all 1s;
 }
 
-.c3_inner div:nth-child(2){
+.c3_inner div:nth-child(2) {
     margin-top: 120px;
     border-radius: 150px;
     overflow: hidden;
 }
 
-.c3_inner a img:hover{
+.c3_inner a img:hover {
     transform: scale(1.2, 1.2);
 }
 
@@ -371,7 +356,7 @@ body::-webkit-scrollbar-track {
     transition: all 1s;
 }
 
-.c4_inner h2:hover{
+.c4_inner h2:hover {
     transform: rotate(90deg) scale(0.7, 0.7);
 }
 
