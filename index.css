@@ -490,12 +490,18 @@ body::-webkit-scrollbar-track {
     width: 1320px;
 }
 
+.c6 video{
+    position: absolute;
+    top: 1px;
+    right: 94px;
+}
+
 .c6 h2 {
     font-family: 'GangwonEdu_OTFBoldA';
     font-size: 22px;
     position: absolute;
-    bottom: 420px;
-    left: 220px;
+    bottom: 380px;
+    left: 210px;
 }
 
 .c6 p {
@@ -503,8 +509,8 @@ body::-webkit-scrollbar-track {
     position: absolute;
     font-size: 10px;
     line-height: 16px;
-    bottom: 340px;
-    left: 215px;
+    bottom: 320px;
+    left: 203px;
 }
 
 .c6_img {
