@@ -423,7 +423,7 @@ body::-webkit-scrollbar-track {
     right: -106px;
 }
 
-/* marquee */
+/* marquee
 .marquee {
     margin: 200px 0;
     width: 100%;
@@ -450,7 +450,7 @@ body::-webkit-scrollbar-track {
     100% {
         right: -100%;
     }
-}
+} */
 
 /* c5 sns */
 
@@ -458,6 +458,7 @@ body::-webkit-scrollbar-track {
     text-align: center;
     height: 635px;
     width: 100%;
+    margin-top: 300px;
 }
 
 .c5 h3 {
